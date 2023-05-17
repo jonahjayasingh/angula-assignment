@@ -1,0 +1,5 @@
+<div class="container">
+<button class="btn btn-primary" (click)="change()">Display deatial</button>
+<p [hidden]="display">hello</p>
+<h1 *ngFor="let i of numlist" [ngClass]="{modify: i >= 5}" [ngStyle]="{'background-color':i >= 5? 'blue' : 'none'}"> {{i}}</h1>
+</div>
